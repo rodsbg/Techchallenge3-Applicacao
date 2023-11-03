@@ -17,7 +17,7 @@ jobs:
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t rodgol/lanchonete-app:latest Dockerfile/.
+      run: docker build -t rodgol/lanchonete-app:latest . -f ../Dockerfile/Dockerfile
 
     - name: Push Docker image to Docker Hub
       run: docker push rodgol/lanchonete-app:latest
