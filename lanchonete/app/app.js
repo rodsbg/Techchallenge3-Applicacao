@@ -20,11 +20,9 @@ const options = {
 
 const specs = swaggerJsdoc(options);
 
+const mongoURI = process.env.MONGO_URI; // Access the MONGO_URI environment variable
 
-
-// Configurar a conexão com o MongoDB
-mongoose.connect('mongodb+srv://user-1:techchallenge123@techchallenge-dev-clust.dgralvh.mongodb.net/', {
-//mongoose.connect('mongodb://127.0.0.1:27017/techchallengelanchonete', {
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
