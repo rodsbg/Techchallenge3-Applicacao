@@ -16,3 +16,9 @@ spec:
       containers:
         - name: lanchonete-api
           image: rodgol/lanchonete:v1
+          env:
+            - name: MONGO_URI
+              valueFrom:
+                secretKeyRef:
+                  name: mongodb-secret
+                  key: MONGO_URI
