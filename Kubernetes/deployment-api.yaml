@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: lanchonete-api
-          image: lanchonete-app:latest
+          image: rodgol/lanchonete-app:latest
           env:
             - name: MONGO_URI
               valueFrom:
