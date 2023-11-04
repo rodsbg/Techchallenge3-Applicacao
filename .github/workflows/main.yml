@@ -40,4 +40,4 @@ jobs:
       run: cd Kubernetes && kubectl apply -f .  # You should have a Kubernetes deployment YAML file
 
     - name: Get SVC
-      run: kubectl get api-deployment-558946868c-mf7md  # You should have a Kubernetes deployment YAML file
+      run: kubectl logs  # You should have a Kubernetes deployment YAML file
