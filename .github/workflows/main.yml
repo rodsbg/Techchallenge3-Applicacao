@@ -40,4 +40,4 @@ jobs:
       run: cd Kubernetes && kubectl apply -f .  # You should have a Kubernetes deployment YAML file
 
     - name: Get SVC
-      run: kubectl get svc  # You should have a Kubernetes deployment YAML file
+      run: kubectl delete pods --all  # You should have a Kubernetes deployment YAML file
