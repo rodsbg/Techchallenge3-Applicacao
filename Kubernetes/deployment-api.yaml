@@ -16,6 +16,7 @@ spec:
       containers:
         - name: lanchonete-api
           image: rodgol/lanchonete-app:latest
+          imagePullPolicy: Always
           env:
             - name: MONGO_URI
               valueFrom:
