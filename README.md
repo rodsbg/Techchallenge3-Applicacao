@@ -8,7 +8,7 @@ Rm349615 - Alexandre Montesino da Costa Campos <br />
 Rm349612 - Ricardo Amaral Jara <br />
 Rm350424 - Rodrigo Barboza Gonçalves
 
-3 - acessar pelo browser: http://ip-externo:porta/api-docs 
+3 - acessar pelo browser: colocar o endereço do api gateway
 
 Acessando as apis
 
