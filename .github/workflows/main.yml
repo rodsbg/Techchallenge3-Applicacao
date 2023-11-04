@@ -39,5 +39,5 @@ jobs:
     - name: Deploy to EKS
       run: cd Kubernetes && kubectl apply -f .  # You should have a Kubernetes deployment YAML file
 
-      - name: Get SVC
+    - name: Get SVC
       run: kubectl get svc  # You should have a Kubernetes deployment YAML file
